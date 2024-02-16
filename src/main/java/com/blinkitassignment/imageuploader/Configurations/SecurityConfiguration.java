@@ -25,7 +25,7 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests()
                 .requestMatchers("/user/**")
                 .permitAll()
-                .requestMatchers("/user-login/")
+                .requestMatchers("/user-utility/")
                 .hasRole("USER")
                 .anyRequest()
                 .authenticated()
